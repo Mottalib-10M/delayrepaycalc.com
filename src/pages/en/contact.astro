@@ -1,0 +1,23 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { displayDate } from '../../lib/format';
+const lang = 'en';
+---
+<PageLayout title={`Contact ${SITE_NAMES[lang]}: a rule, an amount, the widget`} description="Write to UK Delay Repay when an operator's scheme or a time limit looks out of date, when a page seems wrong, or to embed the calculator on your own website." lang={lang} noindex={true} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contact</h1>
+    <p>Email: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. A person reads every message.</p>
+    <h2>An amount or a rule looks out of date</h2>
+    <p>Tell us the operator and the rule and, if you have it, the link to the operator's current terms or the official page that says otherwise. Operators change their schemes in their Passenger's Charter; we read the source again, correct the parameter file and date the change.</p>
+    <h2>What we cannot do</h2>
+    <p>We are not a train company, National Rail, the Rail Ombudsman or a claims company. We cannot look at your booking, claim for you or chase an operator. Please do not send ticket numbers, booking references, photographs of tickets or personal details: claims go to the operator's own form.</p>
+    <h2>Using a tool on your own site</h2>
+    <p>Passenger groups, commuter forums and local news sites can show the Delay Repay calculator in an iframe at no cost: see the <a href={route('widget', lang)}>embed page</a>.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+    <p>Updated on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-GB')}</time>.</p>
+  </div>
+</PageLayout>

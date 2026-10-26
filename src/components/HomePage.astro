@@ -1,0 +1,93 @@
+---
+/**
+ * Home (pillar page): the Delay Repay calculator first, then four key figures, every operator side by
+ * side (scheme, first band, time limit, ORR approval), the deadline tool, season tickets, disruption
+ * and fares, and every page of the site. Figures come from params-2026.json and orr-claims.json.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Tool from './Tool.astro';
+import Clamp from './Clamp.astro';
+import Sources from './Sources.astro';
+import { route } from '../i18n/routes';
+import { PAGES } from '../lib/guides';
+import { GROUPS_ORDER, groupLabel } from '../i18n/nav';
+import { helpers } from '../lib/helpers';
+import { LAST_UPDATED, AUTHOR_NAME } from '../data/site-config';
+import { displayDate } from '../lib/format';
+import { faqSchema, webApplicationSchema, websiteSchema, organizationSchema } from '../lib/seo';
+const lang = 'en';
+const h = helpers(lang, true);
+const { N, OMB, ORR } = h;
+const GB = ORR.lastYear.ops['great-britain'];
+const link = (id: string, text: string) => (PAGES.some((p) => p.id === id) ? `<a href="${route(id, lang)}">${text}</a>` : text);
+const groups = GROUPS_ORDER.map((g) => ({ g, items: PAGES.filter((p) => p.group === g).map((p) => ({ href: route(p.id, lang), name: p.en.nav, text: p.en.card })) }));
+
+const title = 'Delay Repay Calculator: Train Delay Compensation in GB';
+const description = 'Delay Repay calculator for every train company in Great Britain: compensation for a late train on a single, return or season ticket, and the last day to claim.';
+const faqs = [
+  { q: 'How much Delay Repay will I get?', a: 'It depends on the train company, your ticket and the minutes late at your destination. With most companies a single pays 25% from 15 minutes, 50% from 30 minutes and the full fare from 60 minutes; a return pays half those shares for each late leg. Seasons are first divided into a value per journey. The calculator applies the bands of the company you choose.' },
+  { q: 'What is the time limit for a Delay Repay claim?', a: `${N.claimDays} days from the day of travel, set by the national Conditions of Travel, unless the operator allows longer. Each journey has its own deadline, so on a return the outward and return legs are counted separately. The calculator shows the last day for the date you enter.` },
+  { q: 'Is Delay Repay paid if the delay was not the train company’s fault?', a: `Yes, in most cases. Delay Repay pays for the delay rather than a fault, and from ${N.minDelay} minutes late the Conditions of Travel make compensation due whatever the cause. Under that, an operator may exclude delays caused entirely outside the rail industry’s control, but only where its own charter says so.` },
+  { q: 'Can I claim Delay Repay on a season ticket?', a: 'Yes. Weekly, monthly and annual seasons are compensated per delayed journey. The operator divides the season price by a fixed number of journeys to find the value of one, then applies its usual bands to that value. Some operators also pay for repeated short delays or let you claim two journeys when the delay reaches two hours. The season ticket page covers each company.' },
+  { q: 'What happens if my train is cancelled?', a: `You can take one of the ${N.alternativeTrains} trains before or after it with the same operator, travel on a later date, or give up the trip and get a full refund with no fee. Since September 2026, many operators also accept your ticket on another participating company’s train within ${N.crossOperatorWindowHours} hours. If you travel and arrive late, Delay Repay applies.` },
+  { q: 'What can I do if my claim is refused?', a: `Reply to the operator with the claim reference and the missing facts: the train you caught, the time you arrived, a clear photo of the ticket. If it keeps its decision, its final response, or ${OMB.afterWorkingDays} working days without an answer, lets you take the case to the Rail Ombudsman, which is free and independent of the train companies.` },
+  { q: 'Is this site part of National Rail or a train company?', a: 'No. It is an independent site published by Radif Partners. It has no access to your booking or to any claim, files nothing for you and takes no fee. It reads each operator’s published scheme and the national rules, works out the amount and the date, and sends you to the operator’s own claim form, where you claim yourself.' },
+];
+const jsonLd = [websiteSchema(lang), organizationSchema(lang), webApplicationSchema({ name: 'Delay Repay calculator', description, path: route('home', lang), lang }), faqSchema(faqs, lang)];
+const resume = `Delay Repay is the compensation train companies in Great Britain pay when you arrive late, and its amount follows three facts: the operator that ran the late train, the type of ticket and the minutes late at your destination. Most operators pay 25% of a single from 15 minutes, 50% from 30 minutes and the full fare from 60 minutes; some start at 30 minutes, and a few have schemes of their own. On a return, each leg is worth half the fare; on a season ticket, the price is divided into the value of one journey before the bands apply. Under all of them, the National Rail Conditions of Travel guarantee at least ${h.pc(N.minPct)} of the price of the delayed journey from ${N.minDelay} minutes late, whatever the cause, and you claim within ${N.claimDays} days. The calculator above reads the published bands of ${h.OPS.length} operators, each dated, gives the amount, the band, what the next band would pay and the last day to claim, and links to the operator's own form.`;
+const opsRows = h.byName(h.OPS).map((o) => { const s = h.orr(o.orr).last; return [link(`op-${o.id}`, o.name), o.scheme, `${h.threshold(o)} min`, `${o.deadlineDays} days`, s && s.approvedPct !== null ? h.pc(s.approvedPct, 1) : '-']; });
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={jsonLd} faqs={faqs} breadcrumbs={[]}>
+  <header class="mb-3">
+    <h1 class="mt-0 text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">Delay Repay calculator</h1>
+    <p class="mt-2 text-base text-navy-700 sm:text-lg">Your train was late: pick the company, the ticket and the minutes late to see the compensation and the last day to claim.</p>
+  </header>
+  <div data-outil class="mb-4"><Tool tool={{ kind: 'repay', props: { operator: 'avanti-west-coast', ticket: 'single', price: 64, delay: 42 } }} primary={true} seedKey="home" /></div>
+  <Clamp text={resume} id="clamp-home" lang={lang} class="mb-3" />
+  <p class="mb-6 text-sm text-navy-600">Schemes and rules checked on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-GB')}</time> · {AUTHOR_NAME} · <a href={route('method', lang)} class="underline hover:text-navy-900">How the amount is worked out</a> · <a href={route('about', lang)} class="underline hover:text-navy-900">About this site</a></p>
+
+  <dl class="not-prose mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4" data-chiffres>
+    <div class="rounded-xl border border-navy-100 bg-white p-3"><dt class="text-xs text-navy-600">Time limit to claim</dt><dd class="text-2xl font-bold text-navy-900">{N.claimDays} days</dd></div>
+    <div class="rounded-xl border border-navy-100 bg-white p-3"><dt class="text-xs text-navy-600">National minimum from</dt><dd class="text-2xl font-bold text-navy-900">{N.minDelay} min</dd></div>
+    <div class="rounded-xl border border-navy-100 bg-white p-3"><dt class="text-xs text-navy-600">Claims approved, {ORR.lastYear.label}</dt><dd class="text-2xl font-bold text-navy-900">{h.pc(GB.approvedPct, 1)}</dd></div>
+    <div class="rounded-xl border border-navy-100 bg-white p-3"><dt class="text-xs text-navy-600">Rail Ombudsman after</dt><dd class="text-2xl font-bold text-navy-900">{OMB.afterWorkingDays} working days</dd></div>
+  </dl>
+
+  <div class="prose prose-slate max-w-none">
+    <h2>Every train company side by side</h2>
+    <p>Each operator publishes its own scheme in its Passenger's Charter or Delay Repay terms. The table gives the name of the scheme, the first delay that pays, the time limit and the share of claims the operator approved last year according to the Office of Rail and Road. Each name opens the operator's page, with its own calculator, its season ticket rules and the link to its claim form.</p>
+    <Fragment set:html={h.table(['Operator', 'Scheme', 'Pays from', 'Claim within', 'Approved'], opsRows, `Schemes read on each operator's terms; approval: ${h.src('orr_4410', 'ORR Table 4410')}, ${ORR.lastYear.label}. Where the ORR reports a group, the figure covers all its brands.`, ['l', 'l', 'r', 'r', 'r'])} />
+
+    <h2>The last day to claim</h2>
+    <p>Claims must reach the operator within {N.claimDays} days of the journey, under condition 33.1 of the national Conditions of Travel. The count runs in calendar days and starts again for each journey. Enter the day of travel to get the date.</p>
+  </div>
+  <div class="mb-6"><Tool tool={{ kind: 'mini:deadline' }} idPrefix="h1" /></div>
+  <div class="prose prose-slate max-w-none">
+    <p>The <Fragment set:html={link('delay-repay-time-limit', 'time limit page')} /> lists each operator's limit, and the <Fragment set:html={link('how-to-claim-delay-repay', 'claim guide')} /> covers the form, the evidence and the payment options.</p>
+
+    <h2>Season tickets</h2>
+    <p>A season ticket is compensated per delayed journey. The operator divides the season price by a fixed number, ten for a weekly season and {h.op('southern').season?.divisors.annual} for an annual one with most companies, then applies the band. Short delays add up for commuters on lines with frequent problems.</p>
+  </div>
+  <div class="mb-6"><Tool tool={{ kind: 'mini:season', props: { op: 'southern' } }} idPrefix="h2" /></div>
+  <div class="prose prose-slate max-w-none">
+    <h2>Cancelled trains, strikes and missed connections</h2>
+    <p>When a train is cancelled you can take one of the {N.alternativeTrains} trains before or after it with the same operator and, since <Fragment set:html={h.date(N.crossOperatorFrom)} />, a participating operator's train within {N.crossOperatorWindowHours} hours. If you give up the trip, the unused ticket is refunded in full with no fee. If you travel and arrive late, Delay Repay counts the delay against the timetable of the day. The pages on <Fragment set:html={link('train-cancelled-rights', 'cancellations')} />, <Fragment set:html={link('train-strike-refund', 'strikes')} /> and <Fragment set:html={link('missed-connection-compensation', 'missed connections')} /> go through each case.</p>
+  </div>
+  <div class="mb-6"><Tool tool={{ kind: 'mini:crossop' }} idPrefix="h3" /></div>
+  <div class="prose prose-slate max-w-none">
+    <h2>Paying less in the first place</h2>
+    <p>Railcards take a third off most fares for a yearly fee, split tickets are allowed when the train stops where the tickets change, and regulated fares in England were frozen from <Fragment set:html={h.date(h.FARES.freezeFrom)} />. The <Fragment set:html={link('which-railcard', 'railcard chooser')} />, the <Fragment set:html={link('split-ticketing', 'split ticket calculator')} /> and the <Fragment set:html={link('rail-fares-2027', 'fares page')} /> do the arithmetic.</p>
+
+    <h2>Every page of the site</h2>
+  </div>
+  <div class="not-prose grid gap-6 sm:grid-cols-2" data-sommaire>
+    {groups.map(({ g, items }) => (
+      <section><h3 class="mb-2 text-lg font-semibold text-navy-900">{groupLabel(g)}</h3><ul class={`text-sm ${g === 'operators' ? 'columns-2 gap-4' : 'space-y-2'}`}>{items.map((c) => <li class="break-inside-avoid"><a href={c.href} class="font-medium text-accent-700 underline">{c.name}</a>{g !== 'operators' && <span class="block text-navy-700">{c.text}</span>}</li>)}</ul></section>
+    ))}
+  </div>
+  <div class="prose prose-slate mt-8 max-w-none">
+    <h2>How this site works</h2>
+    <p>Every band, divisor and time limit comes from one parameter file, read on each operator's published terms, the National Rail Conditions of Travel, the Rail Ombudsman, GOV.UK and the Office of Rail and Road, each value with its source and date. The calculators run in your browser: nothing you type is sent or stored. The site files no claim, takes no fee and recommends no firm; it sends you to each operator's own form. The <a href={route('method', lang)}>method page</a> explains each calculation.</p>
+    <Sources lang={lang} keys={['nrcot', 'nr_comp', 'orr_4410', 'ombudsman', 'gov_cancel', 'gov_freeze', 'gov_gbr', 'railcards', 'cra2015', 'bankhol']} />
+  </div>
+</PageLayout>

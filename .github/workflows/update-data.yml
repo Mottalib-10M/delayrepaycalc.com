@@ -1,0 +1,27 @@
+# Relève mensuelle des statistiques ORR de réclamations Delay Repay (table 4410, publiée chaque trimestre).
+# Ne tourne qu'une fois le dépôt créé. Si les chiffres ont changé, le JSON est réécrit et poussé ;
+# deploy.yml republie alors le site (workflow_run). Les barèmes des opérateurs, eux, se relisent à la main
+# (RECETTE §17.4) : ils sont dans src/data/params-2026.json avec leur date de lecture.
+name: update-data
+on:
+  schedule:
+    - cron: '23 7 16 * *'   # le 16 de chaque mois, 07:23 UTC (l'ORR publie vers le 15 du mois de parution)
+  workflow_dispatch:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/update-data.py --write
+      - name: Commit orr-claims.json
+        run: |
+          git config user.name "Radif Partners"
+          git config user.email "amradif@gmail.com"
+          git add src/data/orr-claims.json
+          git diff --cached --quiet || git commit -m "Statistiques ORR Delay Repay $(date -u +%F)"
+          git push

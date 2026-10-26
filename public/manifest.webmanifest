@@ -1,0 +1,21 @@
+{
+ "name": "UK Delay Repay",
+ "short_name": "UK Delay Repay",
+ "description": "Work out what a late or cancelled train is worth: Delay Repay by operator, ticket and minutes late, season tickets by day, claim deadlines and the official form.",
+ "start_url": "/en/",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#7A1F2B",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}

@@ -1,0 +1,1862 @@
+{
+ "_lisezmoi": "Barèmes Delay Repay des opérateurs, relus le 2026-10-26 sur les pages et chartes citées (copies archivées signalées dans le libellé de la source quand le site bloque la lecture automatique). Parts : single = part d'un aller simple ; ret = part du prix de l'aller-retour pour UN trajet en retard ; season = part de la valeur d'un trajet (basis single) ou d'une journée (basis return) d'abonnement.",
+ "sources": {
+  "op_avanti_west_coast_1": {
+   "url": "https://www.avantiwestcoast.co.uk/-/media/avanti-pdfs/avanti-policies/2026/passenger-charter-2026.pdf",
+   "label": {
+    "en": "Avanti West Coast Passenger's Charter, April 2026"
+   }
+  },
+  "op_avanti_west_coast_2": {
+   "url": "https://www.avantiwestcoast.co.uk/help-and-support/delay-repay",
+   "label": {
+    "en": "Claim Delay Repay"
+   }
+  },
+  "op_lner_1": {
+   "url": "https://www.lner.co.uk/support/delay-repay/",
+   "label": {
+    "en": "LNER Delay Repay"
+   }
+  },
+  "op_lner_2": {
+   "url": "https://assets.ctfassets.net/mxack5k9p2sw/3ZCEu3cZr9YKeg7Yjj2P0g/1d03e600a61c54f07512c305a265def0/LNER3334_Passenger-s_Charter_Leaflet_-_April_2026.pdf",
+   "label": {
+    "en": "LNER Passenger's Charter, April 2026"
+   }
+  },
+  "op_gwr_1": {
+   "url": "https://www.gwr.com/help-and-support/refunds-and-compensation/delay-repay",
+   "label": {
+    "en": "GWR Delay Repay, read on an archived copy of 22 September 2026"
+   }
+  },
+  "op_southern_1": {
+   "url": "https://www.southernrailway.com/help-and-support/delay-repay-compensation",
+   "label": {
+    "en": "Southern – Delay Repay compensation"
+   }
+  },
+  "op_thameslink_1": {
+   "url": "https://www.thameslinkrailway.com/help-and-support/delay-repay",
+   "label": {
+    "en": "Thameslink – Delay Repay compensation"
+   }
+  },
+  "op_great_northern_1": {
+   "url": "https://www.greatnorthernrail.com/help-and-support/delay-repay-compensation",
+   "label": {
+    "en": "Great Northern – Delay Repay compensation"
+   }
+  },
+  "op_gatwick_express_1": {
+   "url": "https://www.gatwickexpress.com/help-and-support/delay-repay-compensation",
+   "label": {
+    "en": "Gatwick Express – Delay Repay compensation"
+   }
+  },
+  "op_northern_1": {
+   "url": "https://www.northernrailway.co.uk/delay-repay",
+   "label": {
+    "en": "Northern Delay Repay, read on an archived copy of 8 December 2025"
+   }
+  },
+  "op_northern_2": {
+   "url": "https://www.northernrailway.co.uk/sites/default/files/2025-06/Passengers'%20Charter%20booklet%202024%20V1.pdf",
+   "label": {
+    "en": "Northern Passengers' Charter, November 2024, read on an archived copy of 17 September 2025"
+   }
+  },
+  "op_southeastern_1": {
+   "url": "https://www.southeasternrailway.co.uk/help/support/faqs/refunds/delay-repay",
+   "label": {
+    "en": "Southeastern Delay Repay FAQs"
+   }
+  },
+  "op_southeastern_2": {
+   "url": "https://www.southeasternrailway.co.uk/help/refunds-and-compensation/delay-repay-compensation",
+   "label": {
+    "en": "Southeastern Delay Repay"
+   }
+  },
+  "op_south_western_railway_1": {
+   "url": "https://www.southwesternrailway.com/contact-and-help/delay-repay",
+   "label": {
+    "en": "SWR Delay Repay"
+   }
+  },
+  "op_greater_anglia_1": {
+   "url": "https://www.greateranglia.co.uk/about-us/our-performance/delay-repay",
+   "label": {
+    "en": "Greater Anglia Delay Repay, read on an archived copy of 30 December 2025"
+   }
+  },
+  "op_greater_anglia_2": {
+   "url": "https://www.stanstedexpress.com/help/delay-repay",
+   "label": {
+    "en": "Stansted Express Delay Repay, read on an archived copy of 11 September 2026"
+   }
+  },
+  "op_c2c_1": {
+   "url": "https://www.c2c-online.co.uk/tickets-and-fares/automatic-delay-repay/",
+   "label": {
+    "en": "c2c Automatic Delay Repay"
+   }
+  },
+  "op_c2c_2": {
+   "url": "https://www.c2c-online.co.uk/app/uploads/2025/08/68a731da76e16-68a731da76e17Passenger_Charter_Web_JUNE-202585.pdf.pdf",
+   "label": {
+    "en": "c2c Passenger's Charter, valid from 20 July 2025"
+   }
+  },
+  "op_c2c_3": {
+   "url": "https://www.c2c-online.co.uk/help-feedback/delay-repay/",
+   "label": {
+    "en": "c2c Delay Repay"
+   }
+  },
+  "op_chiltern_railways_1": {
+   "url": "https://www.chilternrailways.co.uk/compensation",
+   "label": {
+    "en": "Chiltern – Claiming Compensation"
+   }
+  },
+  "op_chiltern_railways_2": {
+   "url": "https://www.chilternrailways.co.uk/sites/default/files/files/timetables/Chiltern_Delay%20Repay_6pp_DL%20updated%20version%202024.pdf",
+   "label": {
+    "en": "Chiltern Delay Repay claim form"
+   }
+  },
+  "op_crosscountry_1": {
+   "url": "https://www.crosscountrytrains.co.uk/help-support/delay-repay",
+   "label": {
+    "en": "CrossCountry Delay Repay, read on an archived copy of 22 September 2026"
+   }
+  },
+  "op_crosscountry_2": {
+   "url": "https://www.crosscountrytrains.co.uk/customer-service/passenger-charter/full-charter",
+   "label": {
+    "en": "CrossCountry full Passenger Charter, read on an archived copy of 19 May 2025"
+   }
+  },
+  "op_east_midlands_railway_1": {
+   "url": "https://www.eastmidlandsrailway.co.uk/delay-repay",
+   "label": {
+    "en": "EMR Delay Repay, read on an archived copy of 22 September 2026"
+   }
+  },
+  "op_transpennine_express_1": {
+   "url": "https://www.tpexpress.co.uk/-/media/Help-and-support/Delay-Repay-Compensation/DelayRepayClaimForm-Oct26-1.pdf",
+   "label": {
+    "en": "TPE Delay Repay claim form"
+   }
+  },
+  "op_transpennine_express_2": {
+   "url": "https://www.tpexpress.co.uk/-/media/About-us/Customer-commitments/Passenger%27s-Charter/TPE-Passenger-Charter-Dec-2025-Editable-Word-Doc.pdf",
+   "label": {
+    "en": "TPE Passenger's Charter, Dec 2025"
+   }
+  },
+  "op_transpennine_express_3": {
+   "url": "https://www.tpexpress.co.uk/help/delay-repay-compensation/changes-to-delay-repay-and-refund-claims",
+   "label": {
+    "en": "TPE – changes to Delay Repay"
+   }
+  },
+  "op_scotrail_1": {
+   "url": "https://www.scotrail.co.uk/plan-your-journey/our-delay-repay-guarantee",
+   "label": {
+    "en": "ScotRail Delay Repay guarantee, read on an archived copy of 22 September 2026"
+   }
+  },
+  "op_scotrail_2": {
+   "url": "https://www.scotrail.co.uk/media/59957/download?inline=",
+   "label": {
+    "en": "ScotRail Passenger Charter April 2025, read on an archived copy of 20 October 2025"
+   }
+  },
+  "op_transport_for_wales_1": {
+   "url": "https://tfw.wales/help-and-contact/rail/delay-repay",
+   "label": {
+    "en": "TfW Delay Repay"
+   }
+  },
+  "op_west_midlands_railway_1": {
+   "url": "https://www.westmidlandsrailway.co.uk/about-us/delay-repay",
+   "label": {
+    "en": "West Midlands Railway Delay Repay, read on an archived copy of 22 September 2026"
+   }
+  },
+  "op_london_northwestern_railway_1": {
+   "url": "https://www.londonnorthwesternrailway.co.uk/about-us/delay-repay",
+   "label": {
+    "en": "London Northwestern Railway Delay Repay, read on an archived copy of 29 July 2026"
+   }
+  },
+  "op_merseyrail_1": {
+   "url": "https://help.merseyrail.org/hc/en-gb/articles/14723310591132-Single-Return-Ticket-Compensation-Information",
+   "label": {
+    "en": "Merseyrail Single & Return Ticket Compensation, read on an archived copy of 21 June 2025"
+   }
+  },
+  "op_merseyrail_2": {
+   "url": "https://help.merseyrail.org/hc/en-gb/articles/14723678418204-Delay-Compensation-For-Season-Ticket-or-Railpass-Holders",
+   "label": {
+    "en": "Merseyrail Season/Railpass delay compensation, read on an archived copy of 15 September 2025"
+   }
+  },
+  "op_grand_central_1": {
+   "url": "https://www.grandcentralrail.com/help/refunds-and-compensation",
+   "label": {
+    "en": "Grand Central Refunds & compensation"
+   }
+  },
+  "op_grand_central_2": {
+   "url": "https://www.grandcentralrail.com/help/passenger-charter",
+   "label": {
+    "en": "Grand Central Passenger charter"
+   }
+  },
+  "op_hull_trains_1": {
+   "url": "https://www.hulltrains.co.uk/support-and-contact/refunds-and-compensation",
+   "label": {
+    "en": "Hull Trains Refunds & Delay Repay"
+   }
+  },
+  "op_lumo_1": {
+   "url": "https://www.lumo.co.uk/help/delay-repay",
+   "label": {
+    "en": "Lumo Delay Repay"
+   }
+  },
+  "op_heathrow_express_1": {
+   "url": "https://www.heathrowexpress.com/docs/heathrow-express-conditions-of-carriage-july-2026.pdf",
+   "label": {
+    "en": "Heathrow Express Conditions of Carriage"
+   }
+  },
+  "op_elizabeth_line_1": {
+   "url": "https://tfl.gov.uk/fares/refunds/apply-for-a-service-delay-refund",
+   "label": {
+    "en": "TfL – Apply for service delay refund"
+   }
+  },
+  "op_elizabeth_line_2": {
+   "url": "https://content.tfl.gov.uk/tfl-conditions-of-carriage.pdf",
+   "label": {
+    "en": "TfL Conditions of Carriage, from 24 September 2026"
+   }
+  },
+  "op_london_overground_1": {
+   "url": "https://tfl.gov.uk/fares/refunds/apply-for-a-service-delay-refund",
+   "label": {
+    "en": "TfL – Apply for service delay refund"
+   }
+  },
+  "op_london_overground_2": {
+   "url": "https://content.tfl.gov.uk/tfl-conditions-of-carriage.pdf",
+   "label": {
+    "en": "TfL Conditions of Carriage, from 24 September 2026"
+   }
+  },
+  "op_caledonian_sleeper_1": {
+   "url": "https://www.sleeper.scot/help-support/after-your-trip/",
+   "label": {
+    "en": "Caledonian Sleeper – After Your Trip"
+   }
+  },
+  "op_caledonian_sleeper_2": {
+   "url": "https://www.sleeper.scot/media/fgpdnlsm/caledonian-sleeper-guest-experience-charter-201920-firearms-update-1.pdf",
+   "label": {
+    "en": "Guest Experience Charter, Dec 2019"
+   }
+  }
+ },
+ "operators": [
+  {
+   "id": "avanti-west-coast",
+   "name": "Avanti West Coast",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "Season compensation = same % as single (25/50/100/100) of the value of the delayed journey; value = price x 1/10 weekly, 1/16 Flexi, 1/40 monthly, 1/120 quarterly, 1/464 annual. Charter season column shows 100% at 120+ (of one journey value)."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "card",
+    "bank transfer",
+    "cheque",
+    "rail travel vouchers"
+   ],
+   "automatic": "Advance tickets bought on its website or app: the claim is started for you",
+   "claimUrl": "https://delayrepay.avantiwestcoast.co.uk/",
+   "claimLabel": "Claim on Avanti West Coast’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_avanti_west_coast_1",
+    "op_avanti_west_coast_2"
+   ],
+   "notes": [],
+   "owner": "Private (FirstGroup and Trenitalia); due to pass into public ownership on 7 March 2027",
+   "orr": "avanti-west-coast"
+  },
+  {
+   "id": "lner",
+   "name": "LNER",
+   "scheme": "Delay Repay 30",
+   "bands": [
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "'cost of your single ticket' for season = weekly/10, flexi/16, monthly/40, quarterly/120, annual/464; then same bands as single."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "the payment option you select on the form"
+   ],
+   "automatic": "One-click Delay Repay for Advance tickets bought on its website or app, if you opt in",
+   "claimUrl": "https://delayrepay.lner.co.uk/delayrepayV2/",
+   "claimLabel": "Claim on LNER’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_lner_1",
+    "op_lner_2"
+   ],
+   "notes": [
+    "Return tickets: 50% of the relevant portion from 30 minutes, 100% from 60, read here as 25% and 50% of the return fare."
+   ],
+   "owner": "Public ownership (DfT Operator)",
+   "orr": "lner"
+  },
+  {
+   "id": "gwr",
+   "name": "Great Western Railway",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "Season column '(% cost of a journey)': 25 / 50 / 100 / 200% (120+ = 200% of one journey). Carnet/rover: price / days valid = daily return rate."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "card",
+    "cheque",
+    "voucher",
+    "charity donation"
+   ],
+   "automatic": "Opt-in notifications for Advance tickets bought on its website and for its smartcards",
+   "claimUrl": "https://delayrepay.gwr.com/",
+   "claimLabel": "Claim on Great Western Railway’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_gwr_1"
+   ],
+   "notes": [],
+   "owner": "Private (FirstGroup); due to pass into public ownership on 13 December 2026",
+   "orr": "gwr"
+  },
+  {
+   "id": "southern",
+   "name": "Southern",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "6-monthly = 240 single journeys. per delayed journey: 15-29 25%, 30-59 50%, 60-119 100% of one single-journey value; 120+ 100% of two single journeys (a day's return). Flexi: price/16 per single journey; 120+ = 2 single journeys. Only one 120-min claim per day (capped at a full day's travel). Southern page also states: 'we divide the cost of your season ticket by 464; other period tickets are calculated pro-rata'."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "PayPal",
+    "e-voucher",
+    "rail travel vouchers",
+    "charity donation"
+   ],
+   "automatic": "Key Smartcard holders who sign up in their account",
+   "claimUrl": "https://delayrepay.southernrailway.com",
+   "claimLabel": "Claim on Southern’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_southern_1"
+   ],
+   "notes": [],
+   "owner": "Public ownership since 31 May 2026 (Govia Thameslink Railway)",
+   "orr": "gtr"
+  },
+  {
+   "id": "thameslink",
+   "name": "Thameslink",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "6-monthly = 240 single journeys. per delayed journey: 15-29 25%, 30-59 50%, 60-119 100% of one single-journey value; 120+ 100% of two single journeys (a day's return). Flexi: price/16 per single journey; 120+ = 2 single journeys. Only one 120-min claim per day (capped at a full day's travel)."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "PayPal",
+    "e-voucher",
+    "rail travel vouchers",
+    "charity donation"
+   ],
+   "automatic": "Key Smartcard holders who sign up in their account",
+   "claimUrl": "https://delayrepay.thameslinkrailway.com",
+   "claimLabel": "Claim on Thameslink’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_thameslink_1"
+   ],
+   "notes": [],
+   "owner": "Public ownership since 31 May 2026 (Govia Thameslink Railway)",
+   "orr": "gtr"
+  },
+  {
+   "id": "great-northern",
+   "name": "Great Northern",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "6-monthly = 240 single journeys. per delayed journey: 15-29 25%, 30-59 50%, 60-119 100% of one single-journey value; 120+ 100% of two single journeys (a day's return). Flexi: price/16 per single journey; 120+ = 2 single journeys. Only one 120-min claim per day (capped at a full day's travel)."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "PayPal",
+    "e-voucher",
+    "rail travel vouchers",
+    "charity donation"
+   ],
+   "automatic": "Key Smartcard holders who sign up in their account",
+   "claimUrl": "https://delayrepay.greatnorthernrail.com",
+   "claimLabel": "Claim on Great Northern’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_great_northern_1"
+   ],
+   "notes": [],
+   "owner": "Public ownership since 31 May 2026 (Govia Thameslink Railway)",
+   "orr": "gtr"
+  },
+  {
+   "id": "gatwick-express",
+   "name": "Gatwick Express",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464
+    },
+    "basis": "single",
+    "note": "Annual 464, six-monthly 240, quarterly 120, monthly 40, weekly 10 single journeys. per delayed journey: 15-29 25%, 30-59 50%, 60-119 100% of one single-journey value; 120+ 100% of two single journeys (a day's return). No Flexi rule on GX page."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "PayPal",
+    "e-voucher",
+    "rail travel vouchers",
+    "charity donation"
+   ],
+   "automatic": null,
+   "claimUrl": "https://delayrepay.gatwickexpress.com",
+   "claimLabel": "Claim on Gatwick Express’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_gatwick_express_1"
+   ],
+   "notes": [
+    "Uses the national Delay Repay 15 scheme of Govia Thameslink Railway; no Flexi divisor is published."
+   ],
+   "owner": "Public ownership since 31 May 2026 (Govia Thameslink Railway)",
+   "orr": "gtr"
+  },
+  {
+   "id": "northern",
+   "name": "Northern",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "Charter: single journey = 1/10 weekly, 1/16 Flexi, 1/40 monthly, 1/464 annual. Charter table (PDF text extraction) gives season = 25/50/100/100% 'cost of one journey' and flexi = 12.5/25/50/100% — column order uncertain after extraction; verify visually. Alternative: complimentary tickets (1 single / 1 return / 2 returns) for 30+ min."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "card",
+    "rail travel vouchers",
+    "cashable voucher",
+    "charity donation"
+   ],
+   "automatic": "Advance tickets bought on its website or app by registered customers",
+   "claimUrl": "https://delayrepay.northernrailway.co.uk/",
+   "claimLabel": "Claim on Northern’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_northern_1",
+    "op_northern_2"
+   ],
+   "notes": [
+    "Its live pages block automated reading: bands read on archived copies of its Delay Repay page (December 2025) and charter (November 2024)."
+   ],
+   "owner": "Public ownership (DfT Operator)",
+   "orr": "northern"
+  },
+  {
+   "id": "southeastern",
+   "name": "Southeastern",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "Journey rate = price/16 Flexi, /10 weekly, /40 monthly, /120 quarterly, /464 annual; 25%/50%/100% of journey rate; 2h+ = return journey rate (2 x journey rate)."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "PayPal",
+    "e-voucher",
+    "rail travel vouchers",
+    "charity donation"
+   ],
+   "automatic": "One Click Delay Repay: Key smartcards, and e-tickets and Advance tickets bought on its website or app",
+   "claimUrl": "https://delayrepay.southeasternrailway.co.uk/",
+   "claimLabel": "Claim on Southeastern’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_southeastern_1",
+    "op_southeastern_2"
+   ],
+   "notes": [],
+   "owner": "Public ownership (DfT Operator)",
+   "orr": "southeastern"
+  },
+  {
+   "id": "south-western-railway",
+   "name": "South Western Railway",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "Season column '% cost of a return journey': 12.5/25/50/100% (= 25/50/100/200% of one single journey); never more than two single journeys. Season holders who abandon: claim as 120+ delay."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "cheque",
+    "rail travel vouchers"
+   ],
+   "automatic": "Automated Delay Repay, after sign-up: seasons on its smartcards and Advance tickets bought on its website",
+   "claimUrl": "https://delayrepay.southwesternrailway.com/",
+   "claimLabel": "Claim on South Western Railway’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_south_western_railway_1"
+   ],
+   "notes": [
+    "Island Line trains, run by South Western Railway, are assumed to follow the same scheme."
+   ],
+   "owner": "Public ownership since 25 May 2025",
+   "orr": "south-western-railway"
+  },
+  {
+   "id": "greater-anglia",
+   "name": "Greater Anglia",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464
+    },
+    "basis": "single",
+    "note": "'proportionate cost ... (i.e. 1/10th of a Weekly ticket, 1/40th of a Monthly ticket and 1/464th of an Annual ticket)'. Flexi divisor not stated."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "PayPal",
+    "bank transfer",
+    "refund to the card used",
+    "rail travel vouchers"
+   ],
+   "automatic": null,
+   "claimUrl": "https://greateranglia.delayrepaycompensation.com/",
+   "claimLabel": "Claim on Greater Anglia’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_greater_anglia_1",
+    "op_greater_anglia_2"
+   ],
+   "notes": [
+    "Stansted Express claims are made on the Greater Anglia site, with the same bands."
+   ],
+   "owner": "Public ownership since 12 October 2025",
+   "orr": "greater-anglia"
+  },
+  {
+   "id": "c2c",
+   "name": "c2c",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "Weekly price/5 working days/2 = /10; Flexi /8/2 = /16; Monthly /20/2 = /40; Annual /232/2 = /464; other validity: working days at 5/week. 120+ = return journey (2 x single value)."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "card (online claims)",
+    "rail travel vouchers",
+    "cheque",
+    "charity donation"
+   ],
+   "automatic": "c2c Smartcard tapped in and out: paid automatically, from 2 minutes late",
+   "claimUrl": "https://c2c.delayrepaycompensation.com/index.cfm",
+   "claimLabel": "Claim on c2c’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_c2c_1",
+    "op_c2c_2",
+    "op_c2c_3"
+   ],
+   "notes": [
+    "Smartcard holders also get a small automatic payment for delays of 2 to 14 minutes.",
+    "Its 2025 charter and its web pages differ on the 60 to 119 minute band; the web pages (100% of the single) are used here."
+   ],
+   "owner": "Public ownership since 20 July 2025",
+   "orr": "c2c"
+  },
+  {
+   "id": "chiltern-railways",
+   "name": "Chiltern Railways",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "Season = 25/50/100% of journey cost; 120+ = 100% of return journey cost."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "rail travel vouchers",
+    "card",
+    "bank transfer",
+    "charity donation"
+   ],
+   "automatic": null,
+   "claimUrl": "https://delayrepay.chilternrailways.co.uk/",
+   "claimLabel": "Claim on Chiltern Railways’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_chiltern_railways_1",
+    "op_chiltern_railways_2"
+   ],
+   "notes": [],
+   "owner": "Public ownership since 20 September 2026",
+   "orr": "chiltern-railways"
+  },
+  {
+   "id": "crosscountry",
+   "name": "CrossCountry",
+   "scheme": "Delay Repay 30",
+   "bands": [
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "Value of each single journey: 1/464 annual, 1/120 quarterly, 1/40 monthly, 1/16 Flexi, 1/10 weekly; season column 50/100/100% of a journey."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "rail travel vouchers"
+   ],
+   "automatic": null,
+   "claimUrl": "https://www.crosscountrytrains.co.uk/help-support/delay-repay",
+   "claimLabel": "Claim on CrossCountry’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_crosscountry_1",
+    "op_crosscountry_2"
+   ],
+   "notes": [
+    "Its live pages block automated reading: bands read on an archived copy of its Delay Repay page (September 2026) and season divisors on its May 2025 charter."
+   ],
+   "owner": "Private (Arriva)",
+   "orr": "crosscountry"
+  },
+  {
+   "id": "east-midlands-railway",
+   "name": "East Midlands Railway",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464
+    },
+    "basis": "single",
+    "note": "Tiered divisor tables: weekly /40 /20 /10 /5; monthly /160 /80 /40 /20; annual /1,856 /928 /464 /232 for 15-29/30-59/60-119/120+ (i.e. 25/50/100/200% of a 1/10, 1/40, 1/464 journey). Flexi/quarterly not stated."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "card",
+    "PayPal"
+   ],
+   "automatic": null,
+   "claimUrl": "https://delayrepay.eastmidlandsrailway.co.uk/",
+   "claimLabel": "Claim on East Midlands Railway’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_east_midlands_railway_1"
+   ],
+   "notes": [],
+   "owner": "Private (Transport UK)",
+   "orr": "east-midlands-railway"
+  },
+  {
+   "id": "transpennine-express",
+   "name": "TransPennine Express",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 2
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464,
+     "flexi": 16
+    },
+    "basis": "single",
+    "note": "Divisor table per band: weekly 40/20/10/5, monthly 160/80/40/20, quarterly 480/240/120/60, annual 1856/928/464/232 (15-29/30-59/60-119/120+). Charter: Flexi cost /16."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer link",
+    "card",
+    "cheque",
+    "rail travel vouchers",
+    "e-voucher",
+    "charity donation"
+   ],
+   "automatic": "Advance tickets bought on its website or app: a one-click claim email",
+   "claimUrl": "https://delayrepay.tpexpress.co.uk/",
+   "claimLabel": "Claim on TransPennine Express’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_transpennine_express_1",
+    "op_transpennine_express_2",
+    "op_transpennine_express_3"
+   ],
+   "notes": [],
+   "owner": "Public ownership (DfT Operator)",
+   "orr": "transpennine-express"
+  },
+  {
+   "id": "scotrail",
+   "name": "ScotRail",
+   "scheme": "Delay Repay 30",
+   "bands": [
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10
+    },
+    "basis": "single",
+    "note": "Charter: refund is a share of a single fare, counting 10 one-way journeys per week. Monthly/annual divisors not stated in text read."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "the method used to pay for the ticket",
+    "PayPal",
+    "vouchers",
+    "charity donation"
+   ],
+   "automatic": null,
+   "claimUrl": "https://delayrepay.scotrail.co.uk/srt_dr",
+   "claimLabel": "Claim on ScotRail’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_scotrail_1",
+    "op_scotrail_2"
+   ],
+   "notes": [
+    "Only a weekly season divisor is published; monthly and annual seasons are worked out by its claim form."
+   ],
+   "owner": "Scottish public ownership",
+   "orr": "scotrail"
+  },
+  {
+   "id": "transport-for-wales",
+   "name": "Transport for Wales",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.25
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464
+    },
+    "basis": "single",
+    "note": "Season compensation value for each journey: annual/464, monthly/40, weekly/10 (same % bands). Max two claims per day. Season holders can claim for strike days ('Strike Action')."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "card",
+    "PayPal",
+    "cheque",
+    "rail travel vouchers",
+    "charity donation"
+   ],
+   "automatic": "Advance tickets bought on its website or app: a claim is created within 24 hours for you to confirm",
+   "claimUrl": "https://delayrepay.trc.cymru/en/claim",
+   "claimLabel": "Claim on Transport for Wales’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_transport_for_wales_1"
+   ],
+   "notes": [
+    "Up to two claims a day on a season ticket."
+   ],
+   "owner": "Welsh public ownership",
+   "orr": "transport-for-wales"
+  },
+  {
+   "id": "west-midlands-railway",
+   "name": "West Midlands Railway",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.125
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.25
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 0.5
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 5,
+     "monthly": 20,
+     "annual": 232,
+     "flexi": 8
+    },
+    "basis": "return",
+    "note": "Daily travel cost = price / 5 (weekly), /20 (monthly/4-week), /232 (annual), /8 (Flexi) return journeys; compensation 12.5/25/50/100% of daily travel cost (= 25/50/100/200% of a single at /10,/40,/464,/16)."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "card",
+    "bank transfer",
+    "PayPal",
+    "rail travel vouchers",
+    "charity donation"
+   ],
+   "automatic": "One-click Delay Repay for Advance singles bought on its app or website",
+   "claimUrl": "https://westmidlandsrailway.delayrepaycompensation.com/index.cfm?fuseaction=Public.addclaim",
+   "claimLabel": "Claim on West Midlands Railway’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_west_midlands_railway_1"
+   ],
+   "notes": [],
+   "owner": "Public ownership since 1 February 2026 (West Midlands Trains)",
+   "orr": "west-midlands-trains"
+  },
+  {
+   "id": "london-northwestern-railway",
+   "name": "London Northwestern Railway",
+   "scheme": "Delay Repay 15",
+   "bands": [
+    {
+     "from": 15,
+     "to": 29,
+     "single": 0.25,
+     "ret": 0.125,
+     "season": 0.125
+    },
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.25
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 0.5
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 5,
+     "monthly": 20,
+     "annual": 232,
+     "flexi": 8
+    },
+    "basis": "return",
+    "note": "Daily travel cost = price / 5 (weekly), /20 (monthly/4-week), /232 (annual), /8 (Flexi) return journeys; compensation 12.5/25/50/100% of daily travel cost (= 25/50/100/200% of a single at /10,/40,/464,/16). Contactless PAYG: single journey fare, or daily cap = daily travel cost."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "card",
+    "bank transfer",
+    "PayPal",
+    "rail travel vouchers",
+    "charity donation"
+   ],
+   "automatic": "One-click Delay Repay for Advance singles bought on its app or website",
+   "claimUrl": "https://londonnorthwesternrailway.delayrepaycompensation.com/index.cfm?fuseaction=Public.addclaim",
+   "claimLabel": "Claim on London Northwestern Railway’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_london_northwestern_railway_1"
+   ],
+   "notes": [],
+   "owner": "Public ownership since 1 February 2026 (West Midlands Trains)",
+   "orr": "west-midlands-trains"
+  },
+  {
+   "id": "merseyrail",
+   "name": "Merseyrail",
+   "scheme": "Own scheme, 30 minutes",
+   "bands": [
+    {
+     "from": 30,
+     "to": null,
+     "single": 1,
+     "ret": 0.5,
+     "season": 0
+    }
+   ],
+   "season": null,
+   "deadlineDays": 28,
+   "payment": [
+    "the method used to pay for the ticket"
+   ],
+   "automatic": null,
+   "claimUrl": "https://help.merseyrail.org/hc/en-gb/articles/14723310591132-Single-Return-Ticket-Compensation-Information",
+   "claimLabel": "Read Merseyrail’s compensation page",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_merseyrail_1",
+    "op_merseyrail_2"
+   ],
+   "notes": [
+    "Pays the full single, or half a return, when a Merseyrail-only ticket arrives more than 30 minutes late; tickets including other lines get 20% of the price. The calculator applies the Merseyrail-only rule, so it overstates through tickets.",
+    "Seasons and Railpasses of a month or more: 5% or 10% of the price after expiry, depending on punctuality over their validity.",
+    "Time limit not stated on the pages read: the national 28 days is used here."
+   ],
+   "owner": "Concession of the Liverpool City Region",
+   "orr": "merseyrail"
+  },
+  {
+   "id": "grand-central",
+   "name": "Grand Central",
+   "scheme": "Charter compensation, 60 minutes",
+   "bands": [
+    {
+     "from": 60,
+     "to": 119,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0
+    },
+    {
+     "from": 120,
+     "to": 179,
+     "single": 0.75,
+     "ret": 0.375,
+     "season": 0
+    },
+    {
+     "from": 180,
+     "to": null,
+     "single": 1,
+     "ret": 0.5,
+     "season": 0
+    }
+   ],
+   "season": null,
+   "deadlineDays": 28,
+   "payment": [
+    "PayPal",
+    "bank transfer",
+    "a free single journey"
+   ],
+   "automatic": null,
+   "claimUrl": "https://compensation.grandcentralrail.com/user/login",
+   "claimLabel": "Claim on Grand Central’s compensation form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_grand_central_1",
+    "op_grand_central_2"
+   ],
+   "notes": [
+    "Bands of 1 to 2 hours, 2 to 3 hours and over 3 hours; a free single journey can be chosen instead."
+   ],
+   "owner": "Open access operator (Arriva)",
+   "orr": "grand-central"
+  },
+  {
+   "id": "hull-trains",
+   "name": "Hull Trains",
+   "scheme": "Delay Repay 30",
+   "bands": [
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": null,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464
+    },
+    "basis": "single",
+    "note": "Divisor table: 30-59 min weekly 20 / monthly 80 / quarterly 240 / annual 928; 60+ min weekly 10 / monthly 40 / quarterly 120 / annual 464. Worked example £3,840 / 928 = £4.14."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "card",
+    "cheque",
+    "rail travel vouchers",
+    "e-voucher",
+    "charity donation"
+   ],
+   "automatic": null,
+   "claimUrl": "https://delayrepay.hulltrains.co.uk/",
+   "claimLabel": "Claim on Hull Trains’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_hull_trains_1"
+   ],
+   "notes": [
+    "No separate band from 120 minutes: a return pays at most half the fare for one late leg."
+   ],
+   "owner": "Open access operator (FirstGroup)",
+   "orr": "hull-trains"
+  },
+  {
+   "id": "lumo",
+   "name": "Lumo",
+   "scheme": "Delay Repay 30",
+   "bands": [
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0.5
+    },
+    {
+     "from": 60,
+     "to": null,
+     "single": 1,
+     "ret": 0.5,
+     "season": 1
+    }
+   ],
+   "season": {
+    "divisors": {
+     "weekly": 10,
+     "monthly": 40,
+     "annual": 464
+    },
+    "basis": "single",
+    "note": "Divisor table: 30-59 min weekly 20 / monthly 80 / quarterly 240 / annual 928; above 60 min weekly 10 / monthly 40 / quarterly 120 / annual 464."
+   },
+   "deadlineDays": 28,
+   "payment": [
+    "bank transfer",
+    "card",
+    "cheque",
+    "e-voucher",
+    "charity donation"
+   ],
+   "automatic": "Opt-in Auto Delay Repay for Advance tickets bought on its website or app",
+   "claimUrl": "https://delayrepay.lumo.co.uk/",
+   "claimLabel": "Claim on Lumo’s Delay Repay form",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_lumo_1"
+   ],
+   "notes": [
+    "No separate band from 120 minutes: a return pays at most half the fare for one late leg."
+   ],
+   "owner": "Open access operator (FirstGroup)",
+   "orr": "lumo"
+  },
+  {
+   "id": "heathrow-express",
+   "name": "Heathrow Express",
+   "scheme": "Own scheme, 30 minutes",
+   "bands": [
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.25,
+     "ret": 0.25,
+     "season": 0
+    },
+    {
+     "from": 60,
+     "to": null,
+     "single": 0.5,
+     "ret": 0.5,
+     "season": 0
+    }
+   ],
+   "season": null,
+   "deadlineDays": 28,
+   "payment": [
+    "refund to a credit or debit card"
+   ],
+   "automatic": null,
+   "claimUrl": "https://www.heathrowexpress.com/docs/heathrow-express-conditions-of-carriage-july-2026.pdf",
+   "claimLabel": "Read Heathrow Express’s Conditions of Carriage",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_heathrow_express_1"
+   ],
+   "notes": [
+    "Not part of the National Rail Delay Repay schemes: its own Conditions of Carriage pay a share of the price paid on the ticket.",
+    "Nothing for delays under 30 minutes."
+   ],
+   "owner": "Heathrow Airport",
+   "orr": "heathrow-express"
+  },
+  {
+   "id": "elizabeth-line",
+   "name": "Elizabeth line",
+   "scheme": "TfL service delay refund, 30 minutes",
+   "bands": [
+    {
+     "from": 30,
+     "to": null,
+     "single": 1,
+     "ret": 0.5,
+     "season": 0
+    }
+   ],
+   "season": null,
+   "deadlineDays": 28,
+   "payment": [
+    "pay as you go credit",
+    "bank transfer"
+   ],
+   "automatic": null,
+   "claimUrl": "https://tfl.gov.uk/fares/refunds/apply-for-a-service-delay-refund",
+   "claimLabel": "Apply on TfL’s service delay refund page",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_elizabeth_line_1",
+    "op_elizabeth_line_2"
+   ],
+   "notes": [
+    "Refund of the single fare of the delayed journey (pay as you go), or its value for paper tickets.",
+    "No refund for planned works, weather, security alerts, customer incidents or strikes."
+   ],
+   "owner": "Transport for London",
+   "orr": "elizabeth-line"
+  },
+  {
+   "id": "london-overground",
+   "name": "London Overground",
+   "scheme": "TfL service delay refund, 30 minutes",
+   "bands": [
+    {
+     "from": 30,
+     "to": null,
+     "single": 1,
+     "ret": 0.5,
+     "season": 0
+    }
+   ],
+   "season": null,
+   "deadlineDays": 28,
+   "payment": [
+    "pay as you go credit",
+    "bank transfer"
+   ],
+   "automatic": null,
+   "claimUrl": "https://tfl.gov.uk/fares/refunds/apply-for-a-service-delay-refund",
+   "claimLabel": "Apply on TfL’s service delay refund page",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_london_overground_1",
+    "op_london_overground_2"
+   ],
+   "notes": [
+    "Refund of the single fare of the delayed journey (pay as you go), or its value for paper tickets.",
+    "No refund for planned works, weather, security alerts, customer incidents or strikes."
+   ],
+   "owner": "Transport for London",
+   "orr": "london-overground"
+  },
+  {
+   "id": "caledonian-sleeper",
+   "name": "Caledonian Sleeper",
+   "scheme": "Delay Repay 30",
+   "bands": [
+    {
+     "from": 30,
+     "to": 59,
+     "single": 0.5,
+     "ret": 0.25,
+     "season": 0
+    },
+    {
+     "from": 60,
+     "to": 119,
+     "single": 1,
+     "ret": 0.5,
+     "season": 0
+    },
+    {
+     "from": 120,
+     "to": null,
+     "single": 1,
+     "ret": 1,
+     "season": 0
+    }
+   ],
+   "season": null,
+   "deadlineDays": 28,
+   "payment": [
+    "refund to a debit or credit card"
+   ],
+   "automatic": "Tickets booked on its website or by phone: a claim link arrives within 24 hours",
+   "claimUrl": "https://www.sleeper.scot/help-support/after-your-trip/",
+   "claimLabel": "Claim on Caledonian Sleeper’s page",
+   "readOn": "2026-10-26",
+   "sources": [
+    "op_caledonian_sleeper_1",
+    "op_caledonian_sleeper_2"
+   ],
+   "notes": [
+    "Room supplements are compensated separately (50% from 30 minutes, 100% from 60).",
+    "Bands from its 2019 Guest Experience Charter, still referred to by its terms; the current page gives no percentages."
+   ],
+   "owner": "Scottish public ownership",
+   "orr": "caledonian-sleeper"
+  }
+ ]
+}

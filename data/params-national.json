@@ -1,0 +1,387 @@
+{
+ "_lisezmoi": "Règles nationales, railcards, Rail Ombudsman, tarifs et propriété publique. Fusionné avec data/operators.json par scripts/build-params.py pour produire src/data/params-2026.json. Chaque valeur relue sur la source citée le 2026-10-26.",
+ "year": 2026,
+ "retrieved_at": "2026-10-26",
+ "national": {
+  "version": 8,
+  "from": "2026-07-30",
+  "minDelay": 60,
+  "minPct": 0.5,
+  "claimDays": 28,
+  "refundNotifyDays": 28,
+  "payWithinDays": 14,
+  "alternativeTrains": 2,
+  "laterDateDelay": 60,
+  "adminChargeMax": 5,
+  "adminChargeSeasonMax": 10,
+  "refundBeforeValidFrom": "2026-04-01",
+  "crossOperatorFrom": "2026-09-20",
+  "crossOperatorWindowHours": 2,
+  "crossOperatorOperators": [
+   "c2c",
+   "Gatwick Express",
+   "Greater Anglia",
+   "Great Northern",
+   "LNER",
+   "London Northwestern Railway",
+   "Northern",
+   "Southeastern",
+   "Southern",
+   "Thameslink",
+   "South Western Railway",
+   "TransPennine Express",
+   "West Midlands Railway",
+   "Avanti West Coast",
+   "Chiltern Railways",
+   "CrossCountry",
+   "Great Western Railway"
+  ],
+  "crossOperatorLater": [
+   "East Midlands Railway"
+  ],
+  "seasonRefund": {
+   "adminMax": 10,
+   "weeklyMinDaysLeft": 3,
+   "monthsMinDaysLeft": 7,
+   "annualNoRefundAfter": "10 months and 12 days"
+  }
+ },
+ "ombudsman": {
+  "afterWorkingDays": 40,
+  "withinMonths": 12,
+  "maxClaim": 2500,
+  "acceptWorkingDays": 20,
+  "complyWorkingDays": 20,
+  "refundWorkingDays": 10,
+  "aimWorkingDays": 40,
+  "providerReplyWorkingDays": 10,
+  "nations": "England, Wales and Scotland"
+ },
+ "fares": {
+  "freezeAnnounced": "2025-11-23",
+  "freezeFrom": "2026-03-02",
+  "wouldHaveRisenPct": 0.058,
+  "savingMillions": 600,
+  "freezeScope": "regulated fares in England: season tickets, peak returns for commuters and off-peak returns between major cities",
+  "examples": [
+   {
+    "route": "Milton Keynes to London",
+    "saving": 315
+   },
+   {
+    "route": "Woking to London",
+    "saving": 173
+   },
+   {
+    "route": "Bradford to Leeds",
+    "saving": 57
+   }
+  ],
+  "next2027": null,
+  "next2027Checked": "2026-10-26"
+ },
+ "ownership": [
+  {
+   "operator": "South Western Railway",
+   "date": "2025-05-25"
+  },
+  {
+   "operator": "c2c",
+   "date": "2025-07-20"
+  },
+  {
+   "operator": "Greater Anglia",
+   "date": "2025-10-12"
+  },
+  {
+   "operator": "West Midlands Trains",
+   "date": "2026-02-01"
+  },
+  {
+   "operator": "Govia Thameslink Railway",
+   "date": "2026-05-31"
+  },
+  {
+   "operator": "Chiltern Railways",
+   "date": "2026-09-20"
+  },
+  {
+   "operator": "Great Western Railway",
+   "date": "2026-12-13",
+   "future": true
+  },
+  {
+   "operator": "Avanti West Coast",
+   "date": "2027-03-07",
+   "future": true
+  }
+ ],
+ "railcards": {
+  "retrieved_at": "2026-10-26",
+  "cards": [
+   {
+    "id": "16-25",
+    "name": "16-25 Railcard",
+    "price1y": 35,
+    "price3y": 80,
+    "discount": 0.3333333333,
+    "childDiscount": null,
+    "minFare": 12,
+    "minFareWhen": "before 10am Monday to Friday, except Advance tickets, public holidays and July and August",
+    "notBefore": null,
+    "ages": "16 to 25, and mature students aged 26 and over",
+    "travellers": "the holder",
+    "seasons": false,
+    "notes": "1-year card can be bought until the day before the 26th birthday, 3-year card until the day before the 24th."
+   },
+   {
+    "id": "26-30",
+    "name": "26-30 Railcard",
+    "price1y": 35,
+    "price3y": null,
+    "discount": 0.3333333333,
+    "childDiscount": null,
+    "minFare": 12,
+    "minFareWhen": "before 10am Monday to Friday, except Advance tickets and public holidays",
+    "notBefore": null,
+    "ages": "26 to 30",
+    "travellers": "the holder",
+    "seasons": false,
+    "notes": "Digital only; can be bought until the day before the 31st birthday."
+   },
+   {
+    "id": "senior",
+    "name": "Senior Railcard",
+    "price1y": 35,
+    "price3y": 80,
+    "discount": 0.3333333333,
+    "childDiscount": null,
+    "minFare": null,
+    "minFareWhen": null,
+    "notBefore": null,
+    "ages": "60 and over",
+    "travellers": "the holder",
+    "seasons": false,
+    "notes": "Cannot be used for weekday morning peak trips inside the London and South East area, public holidays aside."
+   },
+   {
+    "id": "two-together",
+    "name": "Two Together Railcard",
+    "price1y": 35,
+    "price3y": null,
+    "discount": 0.3333333333,
+    "childDiscount": null,
+    "minFare": null,
+    "minFareWhen": null,
+    "notBefore": "09:30",
+    "ages": "two named people aged 16 and over",
+    "travellers": "both named holders, travelling together",
+    "seasons": false,
+    "notes": "Not valid before 9:30am Monday to Friday, except public holidays."
+   },
+   {
+    "id": "network",
+    "name": "Network Railcard",
+    "price1y": 35,
+    "price3y": null,
+    "discount": 0.3333333333,
+    "childDiscount": 0.6,
+    "minFare": 13,
+    "minFareWhen": "Monday to Friday",
+    "notBefore": "10:00",
+    "ages": "16 and over",
+    "travellers": "the holder and up to 3 more adults, plus up to 4 children",
+    "seasons": false,
+    "notes": "Valid in the London and South East area only, from 10am on weekdays and at any hour at weekends and on public holidays; £1 minimum child fare."
+   },
+   {
+    "id": "family-friends",
+    "name": "Family & Friends Railcard",
+    "price1y": 35,
+    "price3y": 80,
+    "discount": 0.3333333333,
+    "childDiscount": 0.6,
+    "minFare": null,
+    "minFareWhen": null,
+    "notBefore": null,
+    "ages": "any adult aged 16 or over",
+    "travellers": "up to 4 adults and 4 children aged 5 to 15, at least 1 named adult and 1 child travelling",
+    "seasons": false,
+    "notes": "Weekday morning peak trips inside the London and South East area are excluded; £1 minimum child fare."
+   },
+   {
+    "id": "disabled",
+    "name": "Disabled Persons Railcard",
+    "price1y": 20,
+    "price3y": 54,
+    "discount": 0.3333333333,
+    "childDiscount": null,
+    "minFare": null,
+    "minFareWhen": null,
+    "notBefore": null,
+    "ages": "people with a qualifying disability, from age 5",
+    "travellers": "the holder and 1 adult companion",
+    "seasons": false,
+    "notes": "No time restrictions."
+   },
+   {
+    "id": "16-17",
+    "name": "16-17 Saver",
+    "price1y": 35,
+    "price3y": null,
+    "discount": 0.5,
+    "childDiscount": null,
+    "minFare": null,
+    "minFareWhen": null,
+    "notBefore": null,
+    "ages": "16 and 17",
+    "travellers": "the holder",
+    "seasons": true,
+    "notes": "50% off Anytime, Off-Peak, Advance and season tickets, no minimum fare; bought from 17 August 2026 it lasts a full year even past the 18th birthday."
+   },
+   {
+    "id": "veterans",
+    "name": "Veterans Railcard",
+    "price1y": 35,
+    "price3y": 80,
+    "discount": 0.3333333333,
+    "childDiscount": 0.6,
+    "minFare": 12,
+    "minFareWhen": "before 10am Monday to Friday, except Advance tickets, public holidays and July and August",
+    "notBefore": null,
+    "ages": "veterans of the UK armed forces",
+    "travellers": "the holder, 1 named adult companion and up to 4 children",
+    "seasons": false,
+    "notes": "Companion named at purchase."
+   }
+  ]
+ },
+ "sources": {
+  "nrcot": {
+   "url": "https://assets.nationalrail.co.uk/e8xgegruud3g/7iflSDtwN50mQZMP6SKWH0/3bded7549df32c2f5eeadefac8bcb5d9/National_Rail_Conditions_of_Travel_July_2026.pdf",
+   "label": {
+    "en": "National Rail Conditions of Travel, version 8, in force from 30 July 2026 (Rail Settlement Plan)"
+   }
+  },
+  "nr_comp": {
+   "url": "https://www.nationalrail.co.uk/help-and-assistance/compensation-and-refunds/",
+   "label": {
+    "en": "National Rail Enquiries: Compensation and Refunds, with each train company's scheme"
+   }
+  },
+  "orr_4410": {
+   "url": "https://dataportal.orr.gov.uk/statistics/passenger-experience/delay-compensation-claims/",
+   "label": {
+    "en": "Office of Rail and Road: Delay compensation claims statistics (Table 4410), published 15 October 2026"
+   }
+  },
+  "ombudsman": {
+   "url": "https://www.railombudsman.org/en/faq",
+   "label": {
+    "en": "Rail Ombudsman: frequently asked questions (when it can help, time limits, decisions)"
+   }
+  },
+  "gov_freeze": {
+   "url": "https://www.gov.uk/government/news/passengers-save-millions-as-rail-fare-freeze-starts",
+   "label": {
+    "en": "GOV.UK, Department for Transport: Passengers save millions as rail fare freeze starts, 2 March 2026"
+   }
+  },
+  "gov_cancel": {
+   "url": "https://www.gov.uk/government/news/your-cancellations-covered-new-scheme-to-help-stranded-rail-passengers-arrives-this-weekend",
+   "label": {
+    "en": "GOV.UK, Department for Transport: travel on another operator after a cancellation, from 20 September 2026"
+   }
+  },
+  "gov_gbr": {
+   "url": "https://www.gov.uk/guidance/great-british-railways",
+   "label": {
+    "en": "GOV.UK: rail public ownership and Great British Railways (page updated 20 September 2026)"
+   }
+  },
+  "gov_1617": {
+   "url": "https://www.gov.uk/government/news/more-students-to-save-from-september-as-changes-to-16-17-saver-railcard-come-in",
+   "label": {
+    "en": "GOV.UK, Department for Transport: changes to the 16-17 Saver from 17 August 2026"
+   }
+  },
+  "railcards": {
+   "url": "https://www.railcard.co.uk/",
+   "label": {
+    "en": "Railcards (Rail Delivery Group): prices, discounts and time restrictions of each card"
+   }
+  },
+  "cra2015": {
+   "url": "https://www.legislation.gov.uk/ukpga/2015/15/section/49",
+   "label": {
+    "en": "Consumer Rights Act 2015, section 49 (service to be performed with reasonable care and skill)"
+   }
+  },
+  "bankhol": {
+   "url": "https://www.gov.uk/bank-holidays",
+   "label": {
+    "en": "GOV.UK: UK bank holidays (England and Wales, Scotland), 2025 to 2027"
+   }
+  }
+ },
+ "bankHolidays": {
+  "englandWales": [
+   "2025-01-01",
+   "2025-04-18",
+   "2025-04-21",
+   "2025-05-05",
+   "2025-05-26",
+   "2025-08-25",
+   "2025-12-25",
+   "2025-12-26",
+   "2026-01-01",
+   "2026-04-03",
+   "2026-04-06",
+   "2026-05-04",
+   "2026-05-25",
+   "2026-08-31",
+   "2026-12-25",
+   "2026-12-28",
+   "2027-01-01",
+   "2027-03-26",
+   "2027-03-29",
+   "2027-05-03",
+   "2027-05-31",
+   "2027-08-30",
+   "2027-12-27",
+   "2027-12-28"
+  ],
+  "scotland": [
+   "2025-01-01",
+   "2025-01-02",
+   "2025-04-18",
+   "2025-05-05",
+   "2025-05-26",
+   "2025-08-04",
+   "2025-12-01",
+   "2025-12-25",
+   "2025-12-26",
+   "2026-01-01",
+   "2026-01-02",
+   "2026-04-03",
+   "2026-05-04",
+   "2026-05-25",
+   "2026-06-15",
+   "2026-08-03",
+   "2026-11-30",
+   "2026-12-25",
+   "2026-12-28",
+   "2027-01-01",
+   "2027-01-04",
+   "2027-03-26",
+   "2027-05-03",
+   "2027-05-31",
+   "2027-08-02",
+   "2027-11-30",
+   "2027-12-27",
+   "2027-12-28"
+  ],
+  "from": "2025-01-01",
+  "to": "2027-12-31"
+ }
+}

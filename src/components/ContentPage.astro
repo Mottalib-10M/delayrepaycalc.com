@@ -1,0 +1,76 @@
+---
+/**
+ * Renders one page of `src/content/pages/`. Order (RECETTE §5, §9.3, §21): H1 and standfirst, the
+ * tool (first screen), the folded citable block, the page's second tool, then the body. FAQ, related
+ * pages, sources and author box come from PageLayout; the FAQ is shown and marked up from the same
+ * list (§7).
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Clamp from './Clamp.astro';
+import Tool from './Tool.astro';
+import { route, hasRoute } from '../i18n/routes';
+import { label, groupLabel } from '../i18n/nav';
+import { t } from '../i18n/ui';
+import { pageById } from '../lib/guides';
+import { helpers, orrFor } from '../lib/helpers';
+import { operatorById, threshold } from '../lib/engine/repay';
+import { dateL, formatNumberL, pct } from '../lib/format-l';
+import P from '../data/params-2026.json';
+import ORR from '../data/orr-claims.json';
+const ORR_LABEL = ORR.lastYear.label;
+import { articleSchema, faqSchema, breadcrumbSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+import { AUTHOR_NAME } from '../data/site-config';
+import type { PageDef, ToolDef } from '../lib/guide-types';
+interface Props { page: PageDef }
+const { page } = Astro.props;
+const lang = 'en';
+const T = page.en;
+const ui = t(lang);
+const path = route(page.id, lang);
+const h = helpers(lang, true);
+const faqs = T.faqs(h);
+const parts = T.body(h).split(/<!--tool:([a-z0-9:-]+)(?:\|(\{.*?\}))?-->/);
+const jsonLd = [articleSchema({ title: T.h1, description: T.description, path, lang }), webPageSchema({ name: T.h1, description: T.description, path, lang }), breadcrumbSchema([{ name: ui.breadcrumbHome, path: route('home', lang) }, { name: T.nav, path }])];
+if (page.tool) jsonLd.push(webApplicationSchema({ name: T.h1, description: T.description, path, lang }));
+if (faqs.length) jsonLd.push(faqSchema(faqs, lang));
+const cardOf = (id: string) => pageById(id)?.en.card ?? (id === 'home' ? 'Pick the train company, the ticket and the minutes late: the Delay Repay amount, the band and the last day to claim.' : '');
+const related = page.related.filter((id) => hasRoute(id, lang)).map((id) => ({ href: route(id, lang), name: label(id, lang), description: cardOf(id) }));
+type SK = keyof typeof P.sources;
+const sources = page.sources.map((k) => ({ name: P.sources[k as SK].label.en, url: P.sources[k as SK].url }));
+const op = page.operator ? operatorById(page.operator) : undefined;
+if (page.operator && !op) throw new Error(`${page.id}: unknown operator ${page.operator}`);
+const stats = op ? orrFor(op.orr).last : null;
+const chunks: Array<{ html?: string; tool?: ToolDef }> = [];
+for (let i = 0; i < parts.length; i += 3) { chunks.push({ html: parts[i] }); if (parts[i + 1]) chunks.push({ tool: { kind: parts[i + 1], props: parts[i + 2] ? JSON.parse(parts[i + 2]) : undefined } }); }
+---
+<PageLayout title={T.title} description={T.description} lang={lang} jsonLd={jsonLd} faqs={faqs} related={related} sources={sources} breadcrumbs={[{ label: T.nav }]} dateEnHaut={false}>
+  <article>
+    <header class="mb-3">
+      <p class="kicker">{groupLabel(page.group)}</p>
+      <h1 class="mt-0 text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{T.h1}</h1>
+      {page.demarche && <p class="mt-1 text-xs font-medium text-navy-600" data-independant>{ui.independent}</p>}
+      <p class="mt-2 text-base text-navy-700 sm:text-lg">{T.intro}</p>
+    </header>
+    {page.tool && <div data-outil class="mb-4"><Tool tool={page.tool} primary={true} seedKey={page.id} /></div>}
+    {op && (
+      <aside class="mb-6 rounded-xl border border-navy-100 bg-white p-4 text-sm" data-fiche-operateur>
+        <h2 class="mt-0 text-base font-semibold text-navy-900">{op.name} at a glance</h2>
+        <dl class="mt-2 grid grid-cols-[minmax(0,1fr)] gap-x-6 gap-y-1.5 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+          <div class="flex justify-between gap-3"><dt class="text-navy-600">Scheme</dt><dd class="text-right font-medium text-navy-900">{op.scheme}, from {formatNumberL(threshold(op))} min</dd></div>
+          <div class="flex justify-between gap-3"><dt class="text-navy-600">Time limit</dt><dd class="text-right font-medium text-navy-900">{formatNumberL(op.deadlineDays)} days after travel</dd></div>
+          <div class="flex justify-between gap-3"><dt class="text-navy-600">Paid by</dt><dd class="text-right font-medium text-navy-900">{op.payment.join(', ')}</dd></div>
+          <div class="flex justify-between gap-3"><dt class="text-navy-600">Automatic claims</dt><dd class="text-right font-medium text-navy-900">{op.automatic ?? 'No'}</dd></div>
+          {stats && stats.approvedPct !== null && <div class="flex justify-between gap-3"><dt class="text-navy-600">Claims approved (ORR)</dt><dd class="text-right font-medium text-navy-900">{pct(stats.approvedPct, 'en', 1)}</dd></div>}
+          {stats && stats.within20Pct !== null && <div class="flex justify-between gap-3"><dt class="text-navy-600">Closed in 20 working days</dt><dd class="text-right font-medium text-navy-900">{pct(stats.within20Pct, 'en', 1)}</dd></div>}
+        </dl>
+        <p class="mt-3 text-xs text-navy-600">Scheme read on {dateL(op.readOn)}{stats ? ', claim statistics from the Office of Rail and Road, Table 4410, ' + ORR_LABEL : ''}. <a href={op.claimUrl} target="_blank" rel="nofollow noopener noreferrer" class="underline">{op.claimLabel}</a></p>
+      </aside>
+    )}
+    <Clamp text={T.resume(h)} id={`clamp-${page.id}`} lang={lang} class="mb-3" />
+    {page.mini && <div class="mb-4"><Tool tool={page.mini} idPrefix="g" seedKey={`${page.id}-mini`} /></div>}
+    <p class="mb-8 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('editorial', lang)} class="underline hover:text-navy-900">{ui.editorialPolicy}</a> · <a href={route('method', lang)} class="underline hover:text-navy-900">{label('method')}</a></p>
+    <div class="prose prose-slate max-w-none">
+      {chunks.map((c, i) => c.html !== undefined ? <Fragment set:html={c.html} /> : <div class="not-prose"><Tool tool={c.tool!} idPrefix={`s${i}`} seedKey={`${page.id}-s${i}`} /></div>)}
+    </div>
+  </article>
+</PageLayout>

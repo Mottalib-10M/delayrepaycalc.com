@@ -1,0 +1,24 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { breadcrumbSchema } from '../../lib/seo';
+import { t } from '../../i18n/ui';
+const lang = 'en';
+const code = `<iframe src="${SITE_URL}/embed/delay-repay-calculator/" title="Delay Repay calculator" width="100%" height="760" style="border:0;max-width:1000px" loading="lazy"></iframe>`;
+const code2 = `<iframe src="${SITE_URL}/embed/split-ticket-calculator/" title="Split ticket saving calculator" width="100%" height="640" style="border:0;max-width:1000px" loading="lazy"></iframe>`;
+---
+<PageLayout title="Embed the free Delay Repay calculator on your website" description="Put the Delay Repay calculator or the split ticket calculator on your website: one iframe, no sign-up, no tracking, no cookie and no cost, updated with each operator's scheme." lang={lang} noindex={true} jsonLd={[breadcrumbSchema([{ name: t(lang).breadcrumbHome, path: route('home', lang) }, { name: 'Embed', path: route('widget', lang) }])]} breadcrumbs={[{ label: 'Embed' }]} showAuthor={false}>
+  <header class="mb-6">
+    <h1 class="text-3xl font-bold text-navy-900 md:text-4xl">Embed a Delay Repay calculator</h1>
+    <p class="mt-3 text-lg text-navy-700">For passenger groups, commuter forums, local news sites and employers who help people claim for late trains.</p>
+  </header>
+  <div class="prose prose-slate max-w-none">
+    <h2>Delay Repay calculator</h2>
+    <pre class="overflow-x-auto rounded-lg bg-navy-900 p-4 text-sm text-white"><code>{code}</code></pre>
+    <h2>Split ticket saving calculator</h2>
+    <pre class="overflow-x-auto rounded-lg bg-navy-900 p-4 text-sm text-white"><code>{code2}</code></pre>
+    <p>Conditions: keep the credit line under the frame visible and use the tool as it is, without warranty. When an operator changes its scheme, the embedded calculator follows after our next check. Nothing your visitors type reaches us and the frame sets no cookie. Each frame states that the site is independent and not a train company. Questions: <a href={route('contact', lang)}>contact</a>.</p>
+  </div>
+  <div class="mt-8 overflow-hidden rounded-xl border border-navy-200"><iframe src="/embed/delay-repay-calculator/" title="Delay Repay calculator" width="100%" height="760" style="border:0" loading="lazy"></iframe></div>
+</PageLayout>

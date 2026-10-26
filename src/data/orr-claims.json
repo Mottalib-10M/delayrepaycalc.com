@@ -1,0 +1,381 @@
+{
+ "source": "Office of Rail and Road, Table 4410: Delay compensation claims (Open Government Licence v3.0)",
+ "url": "https://dataportal.orr.gov.uk/statistics/passenger-experience/delay-compensation-claims/table-4410-delay-compensation-claims/",
+ "published": "2026-10-15",
+ "next": "2027-01-14",
+ "lastYear": {
+  "label": "April 2025 to March 2026",
+  "ops": {
+   "avanti-west-coast": {
+    "received": 1744468,
+    "closed": 1739436,
+    "approved": 1474136,
+    "approvedPct": 0.8475,
+    "within20Pct": 0.9982
+   },
+   "c2c": {
+    "received": 19423,
+    "closed": 20208,
+    "approved": 15346,
+    "approvedPct": 0.7594,
+    "within20Pct": 0.9949
+   },
+   "caledonian-sleeper": {
+    "received": 7251,
+    "closed": 7163,
+    "approved": 6939,
+    "approvedPct": 0.9687,
+    "within20Pct": 0.9867
+   },
+   "chiltern-railways": {
+    "received": 82574,
+    "closed": 81640,
+    "approved": 68876,
+    "approvedPct": 0.8437,
+    "within20Pct": 0.9992
+   },
+   "crosscountry": {
+    "received": 487793,
+    "closed": 468423,
+    "approved": 301065,
+    "approvedPct": 0.6427,
+    "within20Pct": 0.9913
+   },
+   "east-midlands-railway": {
+    "received": 518208,
+    "closed": 456975,
+    "approved": 377064,
+    "approvedPct": 0.8251,
+    "within20Pct": 0.9817
+   },
+   "elizabeth-line": {
+    "received": 19570,
+    "closed": 19570,
+    "approved": 8330,
+    "approvedPct": 0.4257,
+    "within20Pct": 1.0
+   },
+   "grand-central": {
+    "received": 20147,
+    "closed": 19992,
+    "approved": 9034,
+    "approvedPct": 0.4519,
+    "within20Pct": 0.9897
+   },
+   "gwr": {
+    "received": 1443270,
+    "closed": 1444358,
+    "approved": 1191597,
+    "approvedPct": 0.825,
+    "within20Pct": 0.9987
+   },
+   "greater-anglia": {
+    "received": 296065,
+    "closed": 272830,
+    "approved": 229740,
+    "approvedPct": 0.8421,
+    "within20Pct": 0.9887
+   },
+   "gtr": {
+    "received": 1049559,
+    "closed": 1054079,
+    "approved": 850029,
+    "approvedPct": 0.8064,
+    "within20Pct": 0.9992
+   },
+   "heathrow-express": {
+    "received": 8799,
+    "closed": 8799,
+    "approved": 5578,
+    "approvedPct": 0.6339,
+    "within20Pct": 1.0
+   },
+   "hull-trains": {
+    "received": 32556,
+    "closed": 32987,
+    "approved": 24527,
+    "approvedPct": 0.7435,
+    "within20Pct": 0.9995
+   },
+   "lner": {
+    "received": 485287,
+    "closed": 483906,
+    "approved": 396414,
+    "approvedPct": 0.8192,
+    "within20Pct": 0.9793
+   },
+   "london-overground": {
+    "received": 16707,
+    "closed": 16707,
+    "approved": 7749,
+    "approvedPct": 0.4638,
+    "within20Pct": 1.0
+   },
+   "lumo": {
+    "received": 48822,
+    "closed": 49694,
+    "approved": 40066,
+    "approvedPct": 0.8063,
+    "within20Pct": 0.9996
+   },
+   "merseyrail": {
+    "received": 2712,
+    "closed": 2736,
+    "approved": 2227,
+    "approvedPct": 0.814,
+    "within20Pct": 0.9951
+   },
+   "northern": {
+    "received": 536323,
+    "closed": 534921,
+    "approved": 403175,
+    "approvedPct": 0.7537,
+    "within20Pct": 0.9938
+   },
+   "scotrail": {
+    "received": 70173,
+    "closed": 62884,
+    "approved": 40459,
+    "approvedPct": 0.6434,
+    "within20Pct": 0.9791
+   },
+   "south-western-railway": {
+    "received": 730844,
+    "closed": 699090,
+    "approved": 583867,
+    "approvedPct": 0.8352,
+    "within20Pct": 0.9965
+   },
+   "southeastern": {
+    "received": 598605,
+    "closed": 600573,
+    "approved": 493578,
+    "approvedPct": 0.8218,
+    "within20Pct": 1.0
+   },
+   "transport-for-wales": {
+    "received": 172052,
+    "closed": 171430,
+    "approved": 125486,
+    "approvedPct": 0.732,
+    "within20Pct": 0.9752
+   },
+   "transpennine-express": {
+    "received": 405829,
+    "closed": 407203,
+    "approved": 323942,
+    "approvedPct": 0.7955,
+    "within20Pct": 0.9986
+   },
+   "west-midlands-trains": {
+    "received": 477551,
+    "closed": 448236,
+    "approved": 351094,
+    "approvedPct": 0.7833,
+    "within20Pct": 0.9837
+   },
+   "great-britain": {
+    "received": 9274588,
+    "closed": 9103840,
+    "approved": 7330318,
+    "approvedPct": 0.8052,
+    "within20Pct": 0.9944
+   }
+  }
+ },
+ "current": {
+  "label": "April 2026 to March 2027",
+  "periods": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "provisional": true,
+  "ops": {
+   "avanti-west-coast": {
+    "received": 753720,
+    "closed": 724352,
+    "approved": 656213,
+    "approvedPct": 0.9059,
+    "within20Pct": 0.9957
+   },
+   "c2c": {
+    "received": 13245,
+    "closed": 12771,
+    "approved": 10372,
+    "approvedPct": 0.8122,
+    "within20Pct": 0.9675
+   },
+   "caledonian-sleeper": {
+    "received": 3531,
+    "closed": 3531,
+    "approved": 3531,
+    "approvedPct": 1.0,
+    "within20Pct": 1.0
+   },
+   "chiltern-railways": {
+    "received": 33964,
+    "closed": 33249,
+    "approved": 27922,
+    "approvedPct": 0.8398,
+    "within20Pct": 0.9987
+   },
+   "crosscountry": {
+    "received": 235931,
+    "closed": 202954,
+    "approved": 137207,
+    "approvedPct": 0.676,
+    "within20Pct": 0.9362
+   },
+   "east-midlands-railway": {
+    "received": 267010,
+    "closed": 238897,
+    "approved": 204159,
+    "approvedPct": 0.8546,
+    "within20Pct": 0.9873
+   },
+   "elizabeth-line": {
+    "received": 8155,
+    "closed": 8155,
+    "approved": 3495,
+    "approvedPct": 0.4286,
+    "within20Pct": 1.0
+   },
+   "grand-central": {
+    "received": 7853,
+    "closed": 7398,
+    "approved": 3450,
+    "approvedPct": 0.4663,
+    "within20Pct": 0.9649
+   },
+   "gwr": {
+    "received": 574602,
+    "closed": 549707,
+    "approved": 486509,
+    "approvedPct": 0.885,
+    "within20Pct": 0.9976
+   },
+   "greater-anglia": {
+    "received": 131038,
+    "closed": 117788,
+    "approved": 101254,
+    "approvedPct": 0.8596,
+    "within20Pct": 0.993
+   },
+   "gtr": {
+    "received": 428107,
+    "closed": 413199,
+    "approved": 330975,
+    "approvedPct": 0.801,
+    "within20Pct": 0.998
+   },
+   "heathrow-express": {
+    "received": 4231,
+    "closed": 4231,
+    "approved": 2659,
+    "approvedPct": 0.6285,
+    "within20Pct": 1.0
+   },
+   "hull-trains": {
+    "received": 11595,
+    "closed": 11522,
+    "approved": 9779,
+    "approvedPct": 0.8487,
+    "within20Pct": 0.9998
+   },
+   "lner": {
+    "received": 277502,
+    "closed": 278065,
+    "approved": 225765,
+    "approvedPct": 0.8119,
+    "within20Pct": 0.9922
+   },
+   "london-overground": {
+    "received": 8161,
+    "closed": 8161,
+    "approved": 4411,
+    "approvedPct": 0.5405,
+    "within20Pct": 1.0
+   },
+   "lumo": {
+    "received": 22046,
+    "closed": 22234,
+    "approved": 17633,
+    "approvedPct": 0.7931,
+    "within20Pct": 0.9988
+   },
+   "lumo-west-coast": {
+    "received": 2249,
+    "closed": 2079,
+    "approved": 1599,
+    "approvedPct": 0.7691,
+    "within20Pct": 0.9995
+   },
+   "merseyrail": {
+    "received": 821,
+    "closed": 731,
+    "approved": 637,
+    "approvedPct": 0.8714,
+    "within20Pct": 1.0
+   },
+   "northern": {
+    "received": 169789,
+    "closed": 171363,
+    "approved": 126232,
+    "approvedPct": 0.7366,
+    "within20Pct": 0.9992
+   },
+   "scotrail": {
+    "received": 24298,
+    "closed": 23617,
+    "approved": 10717,
+    "approvedPct": 0.4538,
+    "within20Pct": 0.7567
+   },
+   "south-western-railway": {
+    "received": 374829,
+    "closed": 353024,
+    "approved": 303386,
+    "approvedPct": 0.8594,
+    "within20Pct": 0.9994
+   },
+   "southeastern": {
+    "received": 260151,
+    "closed": 258929,
+    "approved": 219367,
+    "approvedPct": 0.8472,
+    "within20Pct": 1.0
+   },
+   "transport-for-wales": {
+    "received": 65547,
+    "closed": 62026,
+    "approved": 48366,
+    "approvedPct": 0.7798,
+    "within20Pct": 0.9986
+   },
+   "transpennine-express": {
+    "received": 133594,
+    "closed": 132035,
+    "approved": 109957,
+    "approvedPct": 0.8328,
+    "within20Pct": 0.9987
+   },
+   "west-midlands-trains": {
+    "received": 194280,
+    "closed": 172621,
+    "approved": 142122,
+    "approvedPct": 0.8233,
+    "within20Pct": 0.9907
+   },
+   "great-britain": {
+    "received": 4006249,
+    "closed": 3812639,
+    "approved": 3187717,
+    "approvedPct": 0.8361,
+    "within20Pct": 0.9914
+   }
+  }
+ },
+ "retrieved_at": "2026-10-26"
+}

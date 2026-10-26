@@ -1,0 +1,45 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { breadcrumbSchema, articleSchema } from '../../lib/seo';
+import { helpers } from '../../lib/helpers';
+import { displayDate } from '../../lib/format';
+const lang = 'en';
+const h = helpers(lang);
+const { N, OMB, ORR } = h;
+const s = (k: Parameters<typeof h.src>[0], t: string) => h.src(k, t);
+const archived = h.OPS.filter((o) => o.sources.some((k) => /archived/.test((h.P.sources as Record<string, { label: { en: string } }>)[k]?.label.en ?? ''))).map((o) => o.name);
+---
+<PageLayout title="Method of UK Delay Repay: bands, seasons and claim dates" description="How UK Delay Repay reads each operator's scheme, applies its bands to singles, returns and seasons, counts claim deadlines and Ombudsman working days." lang={lang} jsonLd={[articleSchema({ title: 'How the Delay Repay amounts and dates are worked out', description: 'Method of UK Delay Repay', path: route('method', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Method', path: route('method', lang) }])]} breadcrumbs={[{ label: 'Method' }]}>
+  <header class="mb-6"><p class="kicker">Method</p><h1 class="mt-0 text-3xl font-bold text-navy-900 md:text-4xl">How the Delay Repay amounts and dates are worked out</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <p>Every page and every calculator reads one parameter file, built from each operator's published terms and the national rules, read on {h.date(h.P.retrieved_at)}, each value with its source. No band, divisor or number of days is typed into a page; when a scheme changes, the file changes and every page follows. Automated tests check the engine against examples worked by hand from the texts.</p>
+    <h2>1. The operator's bands</h2>
+    <p>For each operator, the file holds its bands: from how many minutes late, up to how many, and the share paid for a single, for one late leg of a return, and for one journey on a season. The calculator finds the band that contains your delay in whole minutes and applies the share to the price you typed. Most operators publish Delay Repay 15 (25%, 50%, 100% and, for returns, 100% from 120 minutes); others start at 30 or 60 minutes or have schemes of their own, all read on their terms (list: <Fragment set:html={s('nr_comp', 'National Rail Enquiries')} />).</p>
+    <h2>2. Returns</h2>
+    <p>Each leg of a return is valued as half of the return fare, as most operators state ("the relevant portion"). Where an operator does not say what the portion is worth, half is assumed, and its page says so. When both legs are late, the two shares are added and capped at the price of the ticket.</p>
+    <h2>3. Season tickets</h2>
+    <p>The season price is divided by the operator's divisor for the season type (weekly, monthly, annual, Flexi) to give the value of one journey, or of one day for the operators that publish a daily value; the band share then applies. Where an operator publishes no divisor for a season type, the calculator says so instead of guessing.</p>
+    <h2>4. Dates</h2>
+    <ul>
+      <li>Claim deadline: the day of the journey plus the operator's time limit in calendar days, at least {N.claimDays} under condition 33.1 of the <Fragment set:html={s('nrcot', 'Conditions of Travel')} />.</li>
+      <li>Refund after disruption: notify within {N.refundNotifyDays} days of the intended journey (condition 30.2).</li>
+      <li>Rail Ombudsman: {OMB.afterWorkingDays} working days from the operator receiving your complaint, skipping weekends and the bank holidays of England and Wales from <Fragment set:html={s('bankhol', 'GOV.UK')} />, or earlier with a final response (<Fragment set:html={s('ombudsman', 'Rail Ombudsman')} />).</li>
+      <li>Delay: measured at your destination against the timetable in force on the day of travel (condition 32.1).</li>
+    </ul>
+    <h2>5. National minimum and other rules</h2>
+    <p>From {N.minDelay} minutes late, every operator in the Conditions of Travel owes at least {h.pc(N.minPct)} of the price of a single, or of the late portion of a return (condition 33.3); the data is checked against this floor at every build. Cross-operator ticket acceptance after a cancellation, in force since {h.date(N.crossOperatorFrom)}, comes from the <Fragment set:html={s('gov_cancel', 'Department for Transport')} />. Railcard prices, discounts, minimum fares and time limits are read on <Fragment set:html={s('railcards', 'railcard.co.uk')} />; the railcard and split-ticket calculators only do arithmetic on the fares you type: the site holds no fare database.</p>
+    <h2>6. Claims statistics</h2>
+    <p>The approval rates and the share closed within 20 working days come from the Office of Rail and Road, <Fragment set:html={s('orr_4410', 'Table 4410')} />, release of {h.date(ORR.published)}, under the Open Government Licence v3.0. The approval rate shown is approved claims divided by closed claims for the period. Where the ORR reports a group (Govia Thameslink Railway, West Midlands Trains), each brand shows the group figure.</p>
+    <h2>7. Checks and updates</h2>
+    <p>A script (scripts/update-data.py) downloads the latest Table 4410 each month through a scheduled workflow and updates the statistics when a new release appears; the site is then rebuilt. Operator schemes, the Conditions of Travel, railcard terms and fares are checked by hand, and the date of the last check is shown on each page. Several operators' websites could not be read by an automated request; their terms were read on archived copies of their official pages, as the source labels state: {archived.join(', ')}.</p>
+    <h2>8. What the site does not do</h2>
+    <ul>
+      <li>It does not decide your claim: the operator checks its train records and its terms.</li>
+      <li>It does not make claims, take payments or contact operators.</li>
+      <li>It does not keep anything you type: the calculators run in your browser.</li>
+    </ul>
+    <p>Method version of <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-GB')}</time>. A figure that looks wrong: <a href={route('contact', lang)}>contact</a>.</p>
+  </div>
+</PageLayout>

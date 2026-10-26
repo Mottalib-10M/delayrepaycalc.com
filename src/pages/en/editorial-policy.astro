@@ -1,0 +1,26 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { displayDate } from '../../lib/format';
+const lang = 'en';
+---
+<PageLayout title={`Editorial policy of ${SITE_NAMES[lang]}: sources and corrections`} description="Which operator terms and official pages UK Delay Repay relies on, how bands and time limits are checked, which sources it refuses and how a mistake is corrected." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Editorial and corrections policy</h1>
+    <p>People use these pages to decide whether to claim, how much to expect and before which day. A wrong band or date can cost them money or a claim, so every band, divisor and time limit points back to the text it was read on.</p>
+    <h2>Who is responsible</h2><p>{AUTHOR_NAME}, reachable at <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>What we read</h2>
+    <ul>
+      <li>each train operator's Passenger's Charter, Delay Repay page or Conditions of Carriage, and Transport for London's refund pages;</li>
+      <li>the National Rail Conditions of Travel, published by Rail Settlement Plan;</li>
+      <li>GOV.UK: Department for Transport announcements on fares, cross-operator ticket acceptance, the 16-17 Saver and public ownership, and the bank holidays;</li>
+      <li>the Office of Rail and Road's statistics on delay compensation claims; the Rail Ombudsman's own pages; the Consumer Rights Act 2015 on legislation.gov.uk; railcard.co.uk for railcard terms.</li>
+    </ul>
+    <h2>Sources we refuse</h2><p>Claims companies, comparison sites, ticket retailers' marketing and forums never supply a figure here. A rule we cannot find in a primary text is not published as a rule; where sources disagree, or an operator's site could only be read on an archived copy, the page says so.</p>
+    <h2>Review cycle</h2><p>The claims statistics are refreshed automatically each month when a new release appears. Operator schemes, the Conditions of Travel and railcard terms are re-read by hand at least every quarter and whenever a change is announced. Announced changes are shown as coming, with their date, never as current.</p>
+    <h2>Corrections</h2>
+    <ol><li>We open the source again.</li><li>We correct the parameter file and add an automated test for the case.</li><li>The site rebuilds and every page shows the new date.</li></ol>
+    <h2>Independence</h2><p>No train company, retailer, ombudsman or firm pays for or reviews what is published here, and the site carries no affiliate link. See also the <a href={route('method', lang)}>method page</a>. Version of <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-GB')}</time>.</p>
+  </div>
+</PageLayout>
