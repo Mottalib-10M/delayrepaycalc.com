@@ -1,6 +1,6 @@
 {
- "name": "UK Delay Repay",
- "short_name": "UK Delay Repay",
+ "name": "Delay Repay Calc",
+ "short_name": "Delay Repay Calc",
  "description": "Work out what a late or cancelled train is worth: Delay Repay by operator, ticket and minutes late, season tickets by day, claim deadlines and the official form.",
  "start_url": "/en/",
  "display": "standalone",

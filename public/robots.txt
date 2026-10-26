@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /*?*
 
-Sitemap: https://uk-delay-repay.example/sitemap-index.xml
+Sitemap: https://delayrepaycalc.com/sitemap-index.xml

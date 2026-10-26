@@ -18,7 +18,7 @@ import xml.etree.ElementTree as ET
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'src', 'data', 'orr-claims.json')
 PAGE = 'https://dataportal.orr.gov.uk/statistics/passenger-experience/delay-compensation-claims/table-4410-delay-compensation-claims/'
-UA = 'Mozilla/5.0 (compatible; uk-delay-repay data refresh; +https://uk-delay-repay.example)'
+UA = 'Mozilla/5.0 (compatible; delayrepaycalc data refresh; +https://delayrepaycalc.com)'
 NS = {'table': 'urn:oasis:names:tc:opendocument:xmlns:table:1.0', 'text': 'urn:oasis:names:tc:opendocument:xmlns:text:1.0', 'office': 'urn:oasis:names:tc:opendocument:xmlns:office:1.0'}
 T = '{%s}' % NS['table']
 

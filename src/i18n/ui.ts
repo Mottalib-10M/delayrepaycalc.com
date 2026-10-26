@@ -6,7 +6,7 @@ const en = {
   asOf: 'Delay Repay rules', lastUpdated: 'read on each train company’s charter and the National Rail Conditions of Travel, last checked on',
   footerValidated: 'Every band, divisor and time limit links to the charter or official page it was read on',
   footerBrowser: 'Calculators run in your browser · nothing you type is sent or stored · free, no account',
-  footerDisclaimer: 'UK Delay Repay is an independent site published by Radif Partners. It is not a train company, National Rail, the Rail Delivery Group, the Rail Ombudsman, a ticket retailer or a claims company, and it does not submit claims or take payments. Amounts are an estimation from each operator’s published scheme and do not replace its decision: the operator decides your claim, and its terms prevail.',
+  footerDisclaimer: 'Delay Repay Calc is an independent site published by Radif Partners. It is not a train company, National Rail, the Rail Delivery Group, the Rail Ombudsman, a ticket retailer or a claims company, and it does not submit claims or take payments. Amounts are an estimation from each operator’s published scheme and do not replace its decision: the operator decides your claim, and its terms prevail.',
   footerPopular: 'Calculators',
   notFound: 'There is no page at this address. The Delay Repay calculator is on the home page.',
   readMore: 'Read more', back: 'Home',
